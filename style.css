@@ -1,0 +1,608 @@
+/* ==== RESET CSS ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fffafc;
+    color: #333;
+}
+
+/* ==== HEADER ==== */
+.top-bar {
+    background: #2b062b;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 0;
+}
+.top-bar .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar a { color: #fff; margin-right: 10px; text-decoration: none; }
+.top-bar a:hover { color: #f9a8d4; }
+
+.main-header {
+    background: #3a004d;
+    padding: 15px 0;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo img { height: 50px; margin-right: 8px; }
+.brand-name { color: #f48fb1; font-size: 28px; font-weight: 700; }
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-menu ul li a:hover {
+    color: #f48fb1;
+}
+
+.header-icons .icon {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.header-icons .icon:hover { color: #f48fb1; }
+
+.cart-count {
+    background: #f48fb1;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+    position: relative;
+    top: -8px;
+    right: 8px;
+}
+
+/* ==== SLIDER ==== */
+.swiper { width: 100%; height: 500px; }
+.swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ==== CATEGORY ==== */
+.category {
+    text-align: center;
+    padding: 40px 0;
+}
+.category h2 {
+    color: #3a004d;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cat-item {
+    background: #fce4ec;
+    border-radius: 12px;
+    padding: 15px;
+    width: 160px;
+    transition: 0.3s;
+}
+.cat-item:hover { background: #f48fb1; color: white; transform: translateY(-5px); }
+.cat-item img { width: 100px; height: 100px; }
+
+/* ==== PRODUCTS ==== */
+/* ---------- PHẦN DANH SÁCH SẢN PHẨM ---------- */
+body {
+    background-color: #fff8fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5a006e;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* GRID sản phẩm hiện đại */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+/* CARD từng sản phẩm */
+.product {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(200, 0, 150, 0.15);
+}
+
+.product-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 1px solid #f3d9f4;
+}
+
+/* Tiêu đề sản phẩm */
+.product h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #3d0048;
+    margin: 10px 10px 5px 10px;
+    min-height: 50px;
+}
+
+/* Giá sản phẩm */
+.product-price {
+    color: #e4007f;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+}
+
+/* Hành động */
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.product-actions form input[type="number"] {
+    width: 45px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #e0cfe3;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+/* Nút chung */
+.btn-cart, .btn-view {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Nút thêm giỏ */
+.btn-cart {
+    background: linear-gradient(45deg, #f48fb1, #d81b60);
+    color: white;
+}
+
+.btn-cart:hover {
+    background: linear-gradient(45deg, #d81b60, #a0006e);
+    transform: scale(1.05);
+}
+
+/* Nút xem chi tiết */
+.btn-view {
+    background: #fff;
+    color: #d81b60;
+    border: 2px solid #d81b60;
+}
+
+.btn-view:hover {
+    background: #d81b60;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+    .product-img {
+        height: 180px;
+    }
+}
+
+
+/* ==== PRODUCT DETAIL ==== */
+.product-detail {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.product-detail img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(190, 0, 190, 0.2);
+}
+.product-detail h2 {
+    color: #a800a8;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product-detail p strong {
+    color: #d000a2;
+    font-size: 18px;
+}
+.product-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+.product-detail form button {
+    background-color: #d000a2;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+.product-detail form button:hover { background-color: #a800a8; }
+.product-detail form input[type="number"] {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+/* ==== COMMENT SECTION ==== */
+.comment-section {
+    width: 90%;
+    margin-top: 50px;
+    background: #fff0fa;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.15);
+}
+.comment-section h3 {
+    color: #a800a8;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment-section input[type="text"],
+.comment-section textarea {
+    width: 100%;
+    border: 1px solid #dcb4e8;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+.comment-section input[type="submit"] {
+    background-color: #c100c1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.comment-section input[type="submit"]:hover {
+    background-color: #a000a0;
+}
+.comment {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(200, 0, 200, 0.1);
+}
+.comment strong { color: #a000a0; }
+.comment small { color: #777; font-size: 12px; }
+
+/* ==== NEWS PAGE ==== */
+.news-page {
+    background: #fffafc;
+    padding: 40px 80px;
+    min-height: 100vh;
+}
+.news-title {
+    text-align: center;
+    font-size: 30px;
+    color: #5a007a;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.news-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+.news-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+.news-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.news-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.news-item:hover img { transform: scale(1.05); }
+.news-content { padding: 20px; }
+.news-content h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.news-content .date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.news-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.read-more {
+    display: inline-block;
+    background: #5a007a;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.read-more:hover { background: #8a00c2; }
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== FOOTER ==== */
+.footer-section {
+    background: linear-gradient(180deg, #3a004d 0%, #5e0a6d 100%);
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Đăng ký nhận tin */
+.newsletter {
+    padding: 40px 20px;
+    background: url('images/wood_bg.jpg') center/cover no-repeat;
+    color: #fff;
+}
+.newsletter h2 {
+    font-size: 28px;
+    color: #f48fb1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.newsletter p { margin-bottom: 20px; font-size: 15px; }
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.newsletter-form input {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    width: 280px;
+    outline: none;
+}
+.newsletter-form button {
+    background: #f48fb1;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.newsletter-form button:hover { background: #ad1457; }
+
+/* Nội dung chính footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #2b062b;
+    text-align: left;
+}
+.footer-col {
+    width: 300px;
+    margin: 20px;
+}
+.footer-col h3 {
+    color: #f48fb1;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.footer-col p, .footer-col a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer-col a:hover { color: #f48fb1; }
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col li { margin-bottom: 8px; }
+.social-icons a {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.social-icons a:hover { color: #f48fb1; }
+
+/* Phần cuối */
+.footer-bottom {
+    background: #210027;
+    padding: 15px;
+    font-size: 14px;
+}
+.footer-bottom span { color: #f48fb1; }
+/* ----------- PHẦN TIN TỨC MỚI NHẤT ----------- */
+.news {
+    background: linear-gradient(to bottom, #fff, #fff4f9);
+    padding: 60px 80px;
+    text-align: center;
+    border-top: 2px solid #f4c2d7;
+}
+
+.news h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #5a006e;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Lưới bài viết tin tức */
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Thẻ bài viết */
+.news-list article {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-list article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(220, 50, 120, 0.15);
+}
+
+/* Hình ảnh bài viết */
+.news-list article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #f5d1e2;
+}
+
+/* Nội dung bài viết */
+.news-list article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4a004e;
+    margin: 15px 10px 8px;
+}
+
+.news-list article p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 10px 20px;
+    line-height: 1.5;
+}
+
+/* Nút xem chi tiết */
+.news-list article a {
+    display: inline-block;
+    background: linear-gradient(45deg, #f48fb1, #d81b60);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin: auto auto 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.news-list article a:hover {
+    background: linear-gradient(45deg, #d81b60, #a0006e);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news {
+        padding: 40px 20px;
+    }
+    .news-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
